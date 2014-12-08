@@ -20,8 +20,8 @@ url: http://cylong.me
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /images/gavatar.jpg
-favicon: /images/favicon.ico
+gavatar: /public/img/gavatar.png
+favicon: /public/img/favicon.ico
 
 # google analytics 设置
 
