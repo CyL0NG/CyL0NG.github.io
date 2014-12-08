@@ -15,5 +15,5 @@ description: DWZ富客户端框架DOM XSS分析
 
 问题出在后台的一处话题报表中，其中话题标题为：&lt;script&gt;alert(42873)&lt;/script&gt;如下图：
 
-![Alt text](/img/20141208164721.jpg)
+![Alt text](/images/20141208164721.jpg)
 
