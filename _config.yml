@@ -24,7 +24,9 @@ gavatar: /public/img/gavatar.png
 favicon: /public/img/favicon.ico
 
 # google analytics 设置
-
+ga:
+  id: UA-57434444-1
+  url: auto
 # disqus 设置
 disqus:
   shortname: cylong
