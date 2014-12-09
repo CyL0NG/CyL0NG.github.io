@@ -66,7 +66,7 @@ description: DWZ富客户端框架DOM XSS分析
 通过jQuery的attr方法获取a标签的title属性，并提交给openTab方法，openTab方法将标题放到li中。
 
 ### 问题出在哪？
-title是之前已经过滤的，但当使用jQuery的attr方法取出a标签的title属性时，这是获取到的title已经经过DOM变换成了&lt;script&gt;alert(42873)%lt;/script&gt;，被转回来了，因此才会触发。
+title是之前已经过滤的，但当使用jQuery的attr方法取出a标签的title属性时，这是获取到的title已经经过DOM变换成了&lt;script&gt;alert(42873)&lt;/script&gt;，被转回来了，因此才会触发。
 
 ### 误解一
 我以为是因为jQuery的attr方法的原因导致此处title的变化，后经过测试，使用js的getAttribute方法同样获取的到也是转回来的title，后查看余弦的《web前端黑客技术揭秘》才发现title是因为DOM渲染才变化的。
